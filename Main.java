@@ -1,31 +1,34 @@
-package com.hackbulgaria.programming51.week5;
+package com.hackbulgaria.programming51.week2;
 
-import java.util.Scanner;
+import com.hackbulgaria.programming51.week2.CoffeeMachine;
+import com.hackbulgaria.programming51.week2.Coffee;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        LinkedList<Integer> l = new LinkedList<>();
-        int n;
-        n = scanner.nextInt();
-        for (int i = 0; i < n; i++) {
-            l.addLast(scanner.nextInt());
-        }
-
-        l.insertAfter(3,scanner.nextInt());
-
-        l.remove(2);
-
-        l.addFirst(scanner.nextInt());
-
-        int x = scanner.nextInt();
-
-        System.out.println(l.contains(x));
-        System.out.println(l.getFirst() + " " + l.getLast());
-        System.out.println(l);
-
-
-    }
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Student kamen = new Student("Kamen","Prog51","male",51);
+		//System.out.println(kamen);
+		/*
+		kamen.addGrade(3,0);
+		kamen.addGrade(3,1);
+		kamen.addGrade(3,2);
+		kamen.addGrade(2,3);
+		kamen.addGrade(3,4);
+		
+		System.out.println(kamen.isFailing());
+		kamen.shallIPass();
+		System.out.println(3.0 / 2.0);*/
+		
+		Student [] p51 = new Student[5];
+		for(int i=0;i<5;i++){
+			p51[i] = new Student("Kamen","Prog51","male",51);
+		}
+		
+		p51[0].name = "Ivan";
+		System.out.println(p51[0]);
+	}
 
 }
